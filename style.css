@@ -9,55 +9,72 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 2% 7%;
+  padding: 2% 12%;
 }
 
 .logo h1 {
   font-size: 50px;
 }
 
+.logo img{
+  width: 100%;
+  height: 140%;
+  margin-top: -10%;
+  /* margin-bottom: -5%; */
+}
+
 .bar i {
-  font-size: 25px;
+  font-size: 35px;
   margin-right: 15%;
+  margin-top: 55%;
 }
 
 
 /* Slide */
 
 .container {
-  width: 100%;
+  width: 92%;
   overflow: auto;
+  margin-bottom: 0%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inner{
-  width: 90%;
-  height: 46rem;
+  width: 85%;
+  height: 640px;
   position: relative;
   padding-left: 5%;
   float: left;
+  justify-content: space-between;
+  /* overflow: hidden; */
+}
+
+.slide{
+  width: 76.4rem;
+  height: auto;
   overflow: hidden;
 }
 
 img{
-  width: 100%;
-  height: 50rem;
+  width: 1300px;
+  height: 657px;
 }
 
 .slide2{
-margin-top: 50%;}
+margin-top: 0%;}
 
 .slide3{
-  margin-top: 55%;
+  margin-top: 0%;
 }
 
 .boxs {
   display: flex;
   width: 100%;
-  transform: translateY(-1000%);
 }
 
 .blue {
-  bottom: 17rem;
   background-color: #244ac2;
   justify-content: center;
   width: 35%;
@@ -67,6 +84,7 @@ margin-top: 50%;}
   color: white;
   font-size: 22px;
   position: absolute;
+  top: 53% ;
 }
 
 .black {
@@ -74,47 +92,29 @@ margin-top: 50%;}
   background-color: black;
   height: 2rem;
   padding: 1.7%;
-  width: 10%;
+  width: 7%;
   right: 0;
   z-index: -1 !important;
   top: 53%;
 }
 
-
-
-
-
-
-
-
-
-/* .images img.active{
-    display: inline-block;
-
-} */
-
-/* .next{
-    margin-top: 130px;
-   
-} */
-
-/* .prev{
-    position: relative;
-    margin-right: -55%;
-    margin-left: 50%;
-    z-index: 100;
-} */
-
 button {
-  position: relative;
-  margin-left: 85.5%;
-  margin-top: -20%;
+  position: absolute;
+  margin-left: 0%;
+  right: 10%;
+  top: 50%;
   z-index: 100;
   cursor: pointer;
   font-size: 90px;
   float: left;
   background-color: rgba(0, 0, 0, 0);
   border: none;
+}
+
+button img{
+  width: 100px;
+  height: auto;
+  rotate: 180deg;
 }
 
 /* INFO */
@@ -158,9 +158,54 @@ button {
 
 .icons {
   display: flex;
-  justify-content: space-around;
-  width: 25%;
+  justify-content: space-evenly;
+  width: 35%;
 }
+
+.line{
+  margin-top: 3%;
+  width: 40px;
+  height: 10px;
+}
+
+.c{
+  width: 75px;
+  height: 40px;
+}
+
+.v{
+  width: 34px;
+  height: 41px;
+}
+
+.backs{
+  margin-top: -5%;
+  width: 40px;
+  height: 84px;
+}
+
+.u{
+  margin-top: -5%;
+  width: 40px;
+  height: 75px;
+}
+
+.l{
+  
+  width: 10px;
+  height: 45px;
+}
+
+.n{
+  margin-top: -3%;
+  width: 40px;
+  height: 75px;
+}
+
+/* .icons img{
+  width: 15px;
+  height: 75px;
+} */
 
 /* Cards */
 .cards {
@@ -218,65 +263,44 @@ button {
   }
 
   .inner{
-    width: 85%;
-    height: 20rem;
-    position: relative;
-    padding-left: 5%;
-    float: left;
+    width: 90%;
+    float: none;
+    padding-left: 0;
     overflow: hidden;
+  }
+
+  .slide{
+    width: 100%;
+    height: auto;
   }
 
   img{
     width: 100%;
-    height: 18rem;
   }
 
-  .slide2{
-    margin-top: 24%;}
-
-  .slide3{
-    margin-top: 24%;}
+  .container{
+    width: 100%;
+  }
   
-  /* .slider {
-    width: 100%;
-  }
-
-  .sliding {
-    width: 120%;
-  }
-
-  .slide {
-    margin-left: 1%;
-  }
-
-  .images {
-    width: 100%;
-  }
-
-  .images img {
-    width: 90%;
-  }
-
-  img {
-    height: 15rem !important;
-  } */
   .blue {
-    bottom: 9.5rem;
+    top: 28%;
     width: 40%;
-    height: 1.2rem;
+    height: 1.8rem;
     font-size: 14px;
   }
 
   .black {
     height: 2rem;
-    transform: translateY(-550%);
+    width: 10%;
     right: 5%;
-    /* top: 24.5%; */
+    top: 27.5%;
   }
 
   button {
-    margin-left: 74.5%;
-    transform: translateY(-170%);
+    top: 61%;
+    right: 15%;
+    margin-left: 0%;
+    transform: translateY(-415%);
     font-size: 40px;
   }
 
@@ -285,7 +309,7 @@ button {
   }
 
   .details-text{
-    width: 90%;
+    width: 95%;
   }
 
   .icons{
@@ -326,6 +350,39 @@ button {
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
+
+  .container{
+    width: 100%;
+  }
+
+  .inner{
+    width: 95%;
+    float: none;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  .slide{
+    width: 100%;
+    height: auto;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .details{
+    flex-direction: column;
+  }
+
+  .details-text{
+    width: 95%;
+  }
+
+  .icons{
+    width: 90%;
+  }
+
   .more {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -353,5 +410,21 @@ button {
 
   .text h2 {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1005px) {
+  .more {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 9.6%;
+  }
+  
+  .item {
+    display: flex;
+    width: 12.5% !important;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    background-color: #244ac2;
   }
 }
