@@ -18,9 +18,37 @@
 
 .bar i {
   font-size: 25px;
+  margin-right: 15%;
 }
 
+
 /* Slide */
+
+.container {
+  width: 100%;
+  overflow: auto;
+}
+
+.inner{
+  width: 90%;
+  height: 46rem;
+  position: relative;
+  padding-left: 5%;
+  float: left;
+  overflow: hidden;
+}
+
+img{
+  width: 100%;
+  height: 50rem;
+}
+
+.slide2{
+margin-top: 50%;}
+
+.slide3{
+  margin-top: 55%;
+}
 
 .boxs {
   display: flex;
@@ -29,7 +57,7 @@
 }
 
 .blue {
-  bottom: 20rem;
+  bottom: 17rem;
   background-color: #244ac2;
   justify-content: center;
   width: 35%;
@@ -42,7 +70,6 @@
 }
 
 .black {
-  bottom: 20rem;
   position: absolute;
   background-color: black;
   height: 2rem;
@@ -50,37 +77,16 @@
   width: 10%;
   right: 0;
   z-index: -1 !important;
-  top: 68%;
+  top: 53%;
 }
 
-.slide {
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  /* object-fit: cover; */
-}
 
-.images {
-  width: 100%;
-  height: 45%;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  /* justify-content: center; */
-  /* align-items: center; */
-  margin-left: 2%;
-  /* margin-right: auto; */
-  display: flex;
-  /* object-fit: cover; */
-  /* padding-left: 37%; */
-}
 
-.images img {
-  width: 100% !important;
-  height: 40rem;
-  /* display: none; */
-}
+
+
+
+
+
 
 /* .images img.active{
     display: inline-block;
@@ -99,14 +105,16 @@
     z-index: 100;
 } */
 
-.next {
+button {
   position: relative;
-  margin-left: 95.5%;
-  margin-top: -30%;
+  margin-left: 85.5%;
+  margin-top: -20%;
   z-index: 100;
   cursor: pointer;
   font-size: 90px;
   float: left;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 /* INFO */
@@ -126,19 +134,32 @@
   display: none;
 }
 
+.icons  {
+  font-size: 40px;
+  color: #244ac2;
+  font-weight: 700;
+}
+
 .icon p {
   font-size: 50px;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-.icons {
-  width: 35%;
+.down {
+  rotate: -90deg;
+}
+.up {
+  rotate: 90deg;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .icons {
   display: flex;
   justify-content: space-around;
+  width: 25%;
 }
 
 /* Cards */
@@ -175,7 +196,7 @@
 
 .item p {
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 }
 
@@ -185,58 +206,101 @@
   margin-top: -60%;
 }
 
-@media (max-width: 770px) {
-  img {
-    height: 15rem !important;
-  }
-  .blue {
-    bottom: 10rem;
-    justify-content: center;
-    height: 2.5rem;
-    font-size: 18px;
-    position: absolute;
+@media (max-width: 599px) {
+
+  .logo h1{
+    font-size: 30px;
   }
 
-  .black {
-    bottom: 10rem;
-    position: absolute;
-    background-color: black;
-    height: 2rem;
-    padding: 1.7%;
-    width: 10%;
-    right: 0;
-    z-index: -1 !important;
-    top: 28%;
+  .bar{
+    margin-right: 8%;
+    margin-top: 2%;
+  }
+
+  .inner{
+    width: 85%;
+    height: 20rem;
+    position: relative;
+    padding-left: 5%;
+    float: left;
+    overflow: hidden;
+  }
+
+  img{
+    width: 100%;
+    height: 18rem;
+  }
+
+  .slide2{
+    margin-top: 24%;}
+
+  .slide3{
+    margin-top: 24%;}
+  
+  /* .slider {
+    width: 100%;
+  }
+
+  .sliding {
+    width: 120%;
+  }
+
+  .slide {
+    margin-left: 1%;
   }
 
   .images {
+    width: 100%;
+  }
+
+  .images img {
     width: 90%;
-    height: 45%;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    margin-left: 4%;
-    display: flex;
   }
 
-  .details-text {
-    display: none;
+  img {
+    height: 15rem !important;
+  } */
+  .blue {
+    bottom: 9.5rem;
+    width: 40%;
+    height: 1.2rem;
+    font-size: 14px;
   }
 
-  details-text-mobile {
-    display: block;
+  .black {
+    height: 2rem;
+    transform: translateY(-550%);
+    right: 5%;
+    /* top: 24.5%; */
+  }
+
+  button {
+    margin-left: 74.5%;
+    transform: translateY(-170%);
+    font-size: 40px;
+  }
+
+  .details{
+    flex-direction: column;
+  }
+
+  .details-text{
+    width: 90%;
+  }
+
+  .icons{
+    width: 90%;
   }
 
   .more {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 2% 5%;
-    gap: 2%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2% 9%;
+    gap: 3%;
   }
 
   .item {
-    width: 70% !important;
+    width: 80% !important;
   }
 
   .item p {
@@ -245,8 +309,8 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 5% 5%;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10% 9%;
     gap: 2%;
   }
 
@@ -257,6 +321,37 @@
   }
 
   .text h2 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .more {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2% 8%;
+    gap: 4%;
+    /* width: 100%; */
+  }
+
+  .item {
+    width: 83% !important;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5% 8%;
+    gap: 1%;
+  }
+
+  .card {
+    width: 90%;
+    padding-left: 7%;
+    padding-bottom: 6%;
+  }
+
+  .text h2 {
+    font-size: 20px;
   }
 }
