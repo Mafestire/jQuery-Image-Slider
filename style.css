@@ -29,6 +29,28 @@
   margin-top: 55%;
 }
 
+.res{
+  display: none;
+}
+
+.inner-mobile{
+  width: 85%;
+  height: 250px;
+  position: relative;
+  padding-left: 5%;
+  float: left;}
+
+  .slide-mobile{
+    width: 470px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .slide-mobile img{
+    width: 470px;
+    height: 250px;
+  }
+
 
 /* Slide */
 
@@ -47,8 +69,6 @@
   position: relative;
   padding-left: 5%;
   float: left;
-  justify-content: space-between;
-  /* overflow: hidden; */
 }
 
 .slide{
@@ -142,7 +162,7 @@ button img{
 
 .icon p {
   font-size: 50px;
-  color: white;
+  color: #5CC1F7;
   font-weight: 600;
 }
 
@@ -249,6 +269,76 @@ button img{
   font-weight: 700;
   font-size: 20px;
   margin-top: -60%;
+  color: #5CC1F7;
+}
+
+@media  (max-width: 423px) {
+
+  .inner-mobile{
+    width: 330px !important;
+  }
+  .slide-mobile{
+    width: 340px !important;
+  }
+
+   .slide-mobile img{
+    width: 330px !important;
+    height: 250px;
+  }
+
+}
+@media  (max-width: 464px) {
+
+  .inner-mobile{
+    width: 340px ;
+  }
+  .slide-mobile{
+    width: 330px ;
+    height: auto;
+    overflow: hidden;
+  }
+
+   .slide-mobile img{
+    width: 340px ;
+    height: 250px;
+  }
+
+}
+
+@media  (max-width: 465px) {
+
+  .inner-mobile{
+    width: 370px ;
+  }
+  .slide-mobile{
+    width: 370px ;
+    height: auto;
+    overflow: hidden;
+  }
+
+   .slide-mobile img{
+    width: 370px;
+    height: 250px;
+  }
+
+}
+
+@media  (max-width: 534px) {
+
+  .inner-mobile{
+    width: 400px;
+  }
+  .slide-mobile{
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+  }
+
+   .slide-mobile img{
+    /* width: 400px; */
+    height: 250px;
+  }
+
 }
 
 @media (max-width: 599px) {
@@ -262,24 +352,16 @@ button img{
     margin-top: 2%;
   }
 
-  .inner{
-    width: 90%;
-    float: none;
-    padding-left: 0;
-    overflow: hidden;
+  .res{
+    display: block;
   }
 
-  .slide{
-    width: 100%;
-    height: auto;
-  }
-
-  img{
-    width: 100%;
+  .main{
+    display: none;
   }
 
   .container{
-    width: 100%;
+    width: 97%;
   }
   
   .blue {
@@ -296,12 +378,15 @@ button img{
     top: 27.5%;
   }
 
-  button {
+  .button-mobile {
     top: 61%;
-    right: 15%;
+    right: 10%;
     margin-left: 0%;
-    transform: translateY(-415%);
-    font-size: 40px;
+    transform: translateY(-220%);
+  }
+
+  .button-mobile img{
+    width: 70px;
   }
 
   .details{
@@ -357,6 +442,7 @@ button img{
 
   .inner{
     width: 95%;
+    height: 557px;
     float: none;
     padding-left: 0;
     overflow: hidden;
@@ -369,6 +455,7 @@ button img{
 
   img{
     width: 100%;
+    height: 557px;
   }
 
   .details{
@@ -388,7 +475,6 @@ button img{
     grid-template-columns: repeat(3, 1fr);
     margin: 2% 8%;
     gap: 4%;
-    /* width: 100%; */
   }
 
   .item {
