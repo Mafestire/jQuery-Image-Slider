@@ -52,7 +52,7 @@ $(document).ready(function() {
     }
 
     function updateSliders() {
-        const translateY = -currentIndex * slideHights;
-        $image.css('transform', `translateY(${translateY}px)`);
+        const translateYs = -currentIndex * slideHights;
+        $image.css('transform', `translateY(${translateYs}px)`);
     }
 });

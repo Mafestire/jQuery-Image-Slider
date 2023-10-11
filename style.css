@@ -222,11 +222,6 @@ button img{
   height: 75px;
 }
 
-/* .icons img{
-  width: 15px;
-  height: 75px;
-} */
-
 /* Cards */
 .cards {
   display: flex;
@@ -272,21 +267,84 @@ button img{
   color: #5CC1F7;
 }
 
-@media  (max-width: 423px) {
+/* @media  (max-width: 435px) {
 
   .inner-mobile{
-    width: 330px !important;
+    width: 350px !important;
   }
   .slide-mobile{
-    width: 340px !important;
+    width: 350px !important;
   }
 
    .slide-mobile img{
-    width: 330px !important;
+    width: 350px !important;
     height: 250px;
   }
 
+} */
+
+@media  (max-width: 435px) {
+
+  .inner-mobile{
+    width: 350px !important;
+  }
+  .slide-mobile{
+    width: 350px !important;
+  }
+
+   .slide-mobile img{
+    width: 350px !important;
+    height: 250px;
+  }
+
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .line{
+    margin-top: 20%;
+    width: 40px;
+    height: 10px;
+  }
+  
+  .c{
+    width: 75px;
+    height: 40px;
+  }
+  
+  .v{
+    width: 34px;
+    height: 41px;
+  }
+  
+  .backs{
+    margin-top: -45%;
+    width: 40px;
+    height: 84px;
+  }
+  
+  .u{
+    margin-top: -45%;
+    width: 40px;
+    height: 75px;
+  }
+  
+  .l{
+    
+    width: 10px;
+    height: 45px;
+  }
+  
+  .n{
+    margin-top: -22%;
+    width: 40px;
+    height: 75px;
+    margin-left: -80%;
+  }
+
 }
+
 @media  (max-width: 464px) {
 
   .inner-mobile{
@@ -399,6 +457,7 @@ button img{
 
   .icons{
     width: 90%;
+    margin-top: 5%;
   }
 
   .more {
@@ -437,25 +496,31 @@ button img{
 @media (min-width: 600px) and (max-width: 1000px) {
 
   .container{
-    width: 100%;
+    width: 97%;
   }
 
   .inner{
-    width: 95%;
+    width: 97%;
     height: 557px;
     float: none;
     padding-left: 0;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .slide{
     width: 100%;
-    height: auto;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img{
-    width: 100%;
+    width: 97%;
     height: 557px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .details{
@@ -467,7 +532,47 @@ button img{
   }
 
   .icons{
-    width: 90%;
+    width: 55%;
+    margin-top: 3%;
+  }
+
+  .line{
+    margin-top: 3%;
+    width: 40px;
+    height: 10px;
+  }
+  
+  .c{
+    width: 75px;
+    height: 40px;
+  }
+  
+  .v{
+    width: 34px;
+    height: 41px;
+  }
+  
+  .backs{
+    margin-top: -5%;
+    width: 40px;
+    height: 84px;
+  }
+  
+  .u{
+    margin-top: -5%;
+    width: 40px;
+    height: 75px;
+  }
+  
+  .l{
+    width: 10px;
+    height: 45px;
+  }
+  
+  .n{
+    margin-top: -2%;
+    width: 50px;
+    height: 75px;
   }
 
   .more {
